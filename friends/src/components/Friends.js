@@ -10,7 +10,6 @@ export default function Friends(props) {
    
     axiosWithAuth().get('http://localhost:5000/api/friends')
       .then(res => {
-        //   debugger
         setFriendsList(res.data);
       })
       .catch(error => {
