@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import axios from 'axios'; // Use the wrapped axios!
 import axiosWithAuth from '../axios';
-// import { Redirect } from 'react-router-dom';
 
 export default function Friends(props) {
   const [friendsList, setFriendsList] = useState([]);
