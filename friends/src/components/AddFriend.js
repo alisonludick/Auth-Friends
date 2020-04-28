@@ -13,16 +13,9 @@ export default function AddFriend(props) {
       email: friendEmailRef.current.value,
     })
       .then(res => {
-        // SUCCESS! Credentials are valid:
-        //   1- Put the token string in local storage under a 'token' key
-        // debugger
-        // localStorage.setItem('payload', res.data.payload)
-        //   2- Redirect users to the /quotes route
         props.history.push('/friends');
       })
       .catch(error => {
-        // debugger
-        // Alert a sensible message pulled from the error object
         alert(error.response.data.error);
       });
   };
